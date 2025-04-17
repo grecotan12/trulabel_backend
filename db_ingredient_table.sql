@@ -19,13 +19,12 @@ DROP TABLE IF EXISTS `ingredient`;
 CREATE TABLE `ingredient` (
   `id` BIGINT(20) NOT NULL AUTO_INCREMENT,
   `title` varchar(45) DEFAULT NULL,
-  `definition` varchar(45) DEFAULT NULL,
+  `definition` text DEFAULT NULL,
   `cancerous_rating` float(5, 1) DEFAULT NULL,
   `alternatives` text DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
-ingredient
 
 INSERT INTO `ingredient` VALUES 
 (1, "Trans-fat", "Artificial fat made by hydrogenating oils", 4.8, "olive oil, canola oil, butter, avocado oil"),
